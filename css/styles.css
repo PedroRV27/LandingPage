@@ -1,0 +1,186 @@
+/* Estilos generales para el cuerpo del documento */
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Estilos para la barra de navegación */
+.navbar-brand img {
+  max-height: 40px;
+}
+
+/* Estilos para la imagen del header */
+.image-container {
+  display: flex;
+  gap: 10px;
+  padding: 10px;
+}
+
+.karambit-image {
+  width: 80%;
+  padding-top: 10%;
+}
+
+/*Seccion armas*/
+.lore-image,
+.emperatriz-image {
+  width: 32%;
+  height: auto;
+  object-fit: contain;
+  max-height: 100%;
+  margin: 0;
+}
+
+/* Estilos para la sección con fondo */
+.fondoInicial {
+  background: url('../img/FondoInicial1.jpg');
+  background-size: cover;
+  height: calc(40vh - 56px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Estilos para las imágenes de las tarjetas */
+.card-img-top {
+  height: 200px;
+  object-fit: cover;
+}
+
+/* Estilos para la sección de características */
+#features {
+  background-color: #f8f9fa;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+#features .row {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+}
+
+#features .col-md-4 {
+  text-align: center;
+  display: inline-block;
+  width: 30%;
+  margin: 0 1.5%;
+  box-sizing: border-box;
+}
+
+#features h5 {
+  color: #007bff;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+#features p {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+#features ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+#features ul li:before {
+  content: '\2022';
+  color: #007bff;
+  font-size: 18px;
+  margin-right: 8px;
+}
+
+/* Animaciones */
+@keyframes fadeInUp {
+  from {
+      opacity: 0;
+      transform: translateY(20px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+#features .col-md-4 {
+  animation: fadeInUp 1s ease-in-out;
+}
+
+/* Estilos para los iconos en las características */
+#features .fw-bold::before {
+  font-family: 'Arial', sans-serif;
+  font-size: 24px;
+  margin-right: 8px;
+  margin-left: -30px;
+}
+
+.icon-intercambio::before {
+  content: '\2194';
+}
+
+.icon-tienda::before {
+  content: '\1F6D2';
+}
+
+.icon-cuenta::before {
+  content: '\1F481';
+}
+ /* Estilos para las imágenes de los torneos */
+ .torneo-img {
+  width: 100%; 
+  height: auto; 
+  max-height: 200px; 
+  object-fit: cover; 
+}
+
+/* Estilos para el footer */
+footer {
+  background-color: #343a40;
+  color: #ffffff;
+  padding: 30px 0;
+}
+
+footer .container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+footer .row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer img {
+  max-width: 40%;
+  height: auto;
+}
+
+footer ul.list-inline {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: right;
+}
+
+footer ul.list-inline li {
+  display: inline-block;
+  margin-left: 40px;
+}
+
+footer a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
